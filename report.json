@@ -1,0 +1,26 @@
+[
+  {
+    "commit": "",
+    "file": "name.txt",
+    "line": 1,
+    "offset": 13,
+    "snippet": "AKIAIOSFODNN7EXAMPLE",
+    "finding_type": "credential",
+    "detector": "regex:aws_access_key_id",
+    "rationale": "Matched known pattern aws_access_key_id in added line.",
+    "confidence": 0.9,
+    "llm": "gpt-4o-mini"
+  },
+  {
+    "commit": "",
+    "file": "name.txt",
+    "line": 2,
+    "offset": 9,
+    "snippet": "wJalrXUtnFEMI/K7MDENG/bPxRfiCYEXAMPLEKEY",
+    "finding_type": "potential_secret",
+    "detector": "entropy+keyword",
+    "rationale": "High-entropy token near sensitive keyword.",
+    "confidence": 0.6,
+    "llm": "gpt-4o-mini"
+  }
+]
